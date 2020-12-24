@@ -1,0 +1,14 @@
+type Query {
+  me: User
+}
+
+type User {
+  id: ID!
+  data: [Data!]!
+}
+
+type Data {
+  id: ID!
+  comments: String
+  created_at: String
+}

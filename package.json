@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "version": "1.0.0",
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "parcel ./packages/testapp/src/index.html",
+        "build": "parcel build ./packages/testapp/src/index.html",
+        "build:nohoist": "yarn build --no-scope-hoist",
+        "build:nominify": "yarn build --no-minify",
+        "relay": "relay-compiler --src ./packages/testapp/src --schema ./packages/testapp/schema.graphql --extensions jsx"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.10",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/preset-env": "^7.12.1",
+        "@babel/preset-react": "^7.12.10",
+        "babel-plugin-relay": "^10.1.2",
+        "get-graphql-schema": "^2.1.2",
+        "graphql": "^15.4.0",
+        "parcel": "2.0.0-beta.1",
+        "regenerator-runtime": "^0.13.7",
+        "relay-compiler": "^10.1.2",
+        "relay-config": "^10.1.2",
+        "relay-test-utils": "^10.1.2"
+    }
+}
