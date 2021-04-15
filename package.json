@@ -12,7 +12,7 @@
         "relay": "relay-compiler --src ./packages/testapp/src --schema ./packages/testapp/schema.graphql --extensions jsx"
     },
     "devDependencies": {
-        "@babel/core": "^7.12.10",
+        "@babel/core": "^7.13.15",
         "@babel/plugin-proposal-class-properties": "^7.12.1",
         "@babel/preset-env": "^7.12.1",
         "@babel/preset-react": "^7.12.10",
